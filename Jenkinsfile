@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: '{https://github.com/DaveTerraform/Jenkins-lab.git}'
+                git branch: 'main', url: 'https://github.com/DaveTerraform/Jenkins-lab.git'
             }
         }
         stage('Install Terraform') {
